@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ETEO Admin oldal</title>
+    <link rel="stylesheet" href="site.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li><a href="index.html"><b>ETEO booking</b></a></li>
+        <li><a href="index.html">Tárgyaló foglalás</a></li>
+        <li><a class="active" href="admin.html">Admin oldal</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="sidebar">
+        <hr>
+        <div class="panel">
+          <div class="admin-navbar">
+            <ul>
+              <li><a class="active" href="#users">Felhasználókezelés</a></li>
+              <li><a href="#offices">Irodakezelés</a></li>
+              <li><a href="#groups">Csapatkezelés</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="content" id="adminContent">
+        <h2>Felhasználókezelés</h2>
+        <table id="user-list">
+          <tr>
+            <th>Név</th>
+            <th>Beosztás</th>
+            <th>Email</th>
+            <th>Telefonszám</th>
+            <th>Csapat</th>
+            <th>Módosítás</th>
+          </tr>
+          <tr>
+            <td>Kiss Józsi</td>
+            <td>tesztelő</td>
+            <td>kiss.jozsi@eteo.hu</td>
+            <td>06301213123</td>
+            <td>ETEO group</td>
+            <td class="align-center"><button type="button"><img class="edit-icon" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Edit_icon_%28the_Noun_Project_30184%29.svg" alt="edit icon" /></button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

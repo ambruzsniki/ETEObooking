@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tárgyaló foglaló</title>
+    <link rel="stylesheet" href="site.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li><a href="index.html"><b>ETEO booking</b></a></li>
+        <li><a class="active" href="index.html">Tárgyaló foglalás</a></li>
+        <li><a href="admin.html">Admin oldal</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="sidebar">
+        <hr>
+        <div class="panel">
+          <form id="booking-form" action="booking" method="POST">
+            <div class="form-group">
+              <label for="title">Megbeszélés címe</label>
+              <input type="text" id="title" name="title">
+            </div>
+            <div class="form-group">
+              <label for="office">Iroda</label>
+              <select id="office" name="office">
+                <option value="" selected disabled>Válassz irodát</option>
+                <option value="1">1. emelet 8.</option>
+                <option value="2">3. emelet 19.</option>
+                <option value="3">6. emelet 31.</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="begin-time">Kezdete</label>
+              <input type="datetime-local" id="begin-time" name="date">
+            </div>
+            <div class="form-group">
+              <label for="end-time">Vége</label>
+              <input type="datetime-local" id="end-time" name="date">
+            </div>
+            <input type="submit" value="Rögzítés">
+            <input type="button" id="cancelBooking" value="Visszaállít">
+          </form>
+        </div>
+        <hr>
+        <div class="panel">
+          Iroda adatok
+        </div>
+      </div>
+      <div class="content">
+        <p>2021. január 25-31.</p>
+        <table id="calendar">
+          <tr>
+            <th></th>
+            <th>Hétfő</th>
+            <th>Kedd</th>
+            <th>Szerda</th>
+            <th>Csütörtök</th>
+            <th>Péntek</th>
+            <th>Szombat</th>
+            <th>Vasárnap</th>
+          </tr>
+          <tr>
+            <th>08:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>09:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>10:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>11:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>12:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>13:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>14:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>15:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>16:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>17:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>18:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

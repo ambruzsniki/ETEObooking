@@ -1,0 +1,172 @@
+.navbar ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+border: 1px solid #e7e7e7;
+background-color: #f3f3f3;
+}
+
+.navbar li {
+float: left;
+}
+
+.navbar li a {
+display: block;
+color: #666;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+background-color: #ddd;
+}
+
+.navbar li a.active {
+color: white;
+background-color: #673ab7;
+}
+
+.container {
+    overflow: hidden;
+}
+.sidebar {
+    width: auto;
+    float: left;
+}
+.content {
+    overflow: hidden;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-top: #dedede;
+}
+
+.sidebar{
+
+}
+
+.panel {
+  border-radius: 4px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 1px 1px 3px 2px #dedede;
+}
+
+.admin-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+.admin-navbar li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.admin-navbar li a.active {
+  border: 2px solid #673ab7;
+  background-color: #ddd;
+}
+
+.admin-navbar li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+input[type=text], input[type=datetime-local], select{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #673ab7;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #522e92;
+}
+
+#cancelBooking {
+  background-color: #e7e7e7;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#cancelBooking:hover {
+  background-color: #B8B8B8;
+}
+
+.content {
+    padding: 20px;
+}
+
+#calendar, #user-list {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+#calendar td, #calendar th, #user-list td, #user-list th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#calendar td {
+  width: calc(100%/7);
+}
+
+#calendar tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#calendar th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #A388D3;
+  color: white;
+}
+
+#user-list th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #A388D3;
+  color: white;
+}
+
+#user-list td{
+  width: calc(100%/6);
+}
+
+.edit-icon {
+  width: 20px;
+}
+
+.align-center {
+  text-align: center;
+}
